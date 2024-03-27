@@ -1,0 +1,16 @@
+* { margin: 0; padding: 0;box-sizing:border-box;text-decoration: none; }
+body { height: 100vh;
+background-image: url(../assets/home/background-home-desktop.jpg);
+background-position: center;
+background-size: cover;
+}
+.flex-wp{flex-wrap: wrap;}
+.font-style{color: white;font-family: Bellefair;}
+.flex { display: flex; }
+.aic { align-items: center; }
+.jcc { justify-content: center; }
+.column { flex-direction: column; }
+.jc-se { justify-content: space-evenly; }
+.jc-sa{justify-content: space-around;}
+.jc-sb{justify-content: space-between;}
+
