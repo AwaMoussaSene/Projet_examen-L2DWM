@@ -54,10 +54,19 @@ section{
                 border-left: none;
                 border-top: none;
                 border-right: none;
-                :hover{ background-color: #1A0A81;}
+                &:hover{ background-color: #1A0A81;}
                  a{ color: white; font-size: 18px; }
                  .image{height: 35px;width: 15%;}
             }
+        }
+        .button_one{
+            background-color:  #1A0A81;
+            min-height: 7vh;
+            width: 80%;
+            margin-top: 15vh;
+            margin-left: 10%;
+             a{ color: white; font-size: 18px;margin-left: 5%; }
+             .image{height: 35px;width: 15%;}
         }
     }
     .body{

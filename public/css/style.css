@@ -117,7 +117,7 @@ section .nav .link .button_on {
   border-top: none;
   border-right: none;
 }
-section .nav .link .button_on :hover {
+section .nav .link .button_on:hover {
   background-color: #1A0A81;
 }
 section .nav .link .button_on a {
@@ -125,6 +125,22 @@ section .nav .link .button_on a {
   font-size: 18px;
 }
 section .nav .link .button_on .image {
+  height: 35px;
+  width: 15%;
+}
+section .nav .button_one {
+  background-color: #1A0A81;
+  min-height: 7vh;
+  width: 80%;
+  margin-top: 15vh;
+  margin-left: 10%;
+}
+section .nav .button_one a {
+  color: white;
+  font-size: 18px;
+  margin-left: 5%;
+}
+section .nav .button_one .image {
   height: 35px;
   width: 15%;
 }

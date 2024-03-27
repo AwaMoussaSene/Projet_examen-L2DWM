@@ -17,11 +17,11 @@
             
             <button class="button"><a href="../pages/ajout_ouvrage.html">Ajouter un ouvrage</a></button>
             <form action="" class="form">
-                <label for="">Titre:</label>
+                <label for="">Auteur:</label>
                 <select name="etat" id="" class="select">
                         <option value="All">tout</option>
                         <?php foreach ($ouvrages as $ouvrage):?>
-                            <option value="<?=$ouvrage["titre"]?>"><?=$ouvrage["titre"]?></option>
+                            <option value="<?=$ouvrage["prenom"]."  ".$ouvrage["nom"]?>"><?=$ouvrage["prenom"]."  ".$ouvrage["nom"]?></option>
                         <?php endforeach?>
                     </select>
                 <button type="sebmit" class="sebmit">ok</button>
@@ -29,6 +29,7 @@
                 <table class="tab">
                     <thead>
                         <tr>
+                            <th>Auteur</th>
                             <th>Titre</th>
                             <th>Date d'edition</th>
                             <th>Exemplaires</th>
@@ -38,6 +39,7 @@
                         <?php 
                         foreach ($tab as  $ouvrage):?>
                                     <tr>
+                                     <td><?=$ouvrage["prenom"]."  ".$ouvrage["nom"]?></td>
                                      <td><?=$ouvrage["titre"]?></td>
                                      <td><?=$ouvrage["date_edition"]?></td>
                                      <td><button><a href="">details</a></button></td>   

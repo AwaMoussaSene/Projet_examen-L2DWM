@@ -27,11 +27,12 @@
                         <img src="image/ajouts.png" alt="" class="image">
                         <a href="">Liste des rayons</a>
                     </button>
-                    <button class="button_on flex aic">
-                        <img src="image/deconnexion.png" alt="" class="image">
-                        <a href="">Deconexion</a>
-                    </button>
+                   
                 </div>
+                <button class="button_one flex aic">
+                        <img src="image/deconnexion.png" alt="" class="image">
+                        <a href="">Deconnexion</a>
+                    </button>
                 
          </div>
  </div>
