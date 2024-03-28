@@ -1,28 +1,29 @@
 <?php 
+    $exemplaires=findAllExemplaire();
     if(!isset($_GET["pag"])) {
         $pag=1;
       
     }else{
         $pag=$_GET["pag"];   
     }
-    $taille=count($ouvrages);
+    $taille=count($exemplaires);
     $nombre_ligne=3;
     $nombre_page=ceil($taille/$nombre_ligne);
     $position=($pag-1)*$nombre_ligne;
-    $tab=array_slice($ouvrages, $position, $nombre_ligne);
+    $tab=array_slice($exemplaires, $position, $nombre_ligne);
 ?>
             <div class="body">
-                <h2>Liste des ouvrages</h2>
+                <h2>Liste des exemplaires</h2>
             <hr>
             
-            <button class="button"><a href="">Ajouter un ouvrage</a></button>
+            <button class="button"><a href="">Ajouter un exemplaire</a></button>
             <form action="" class="form">
-                <label for="">Auteur:</label>
+                <label for="">Etat:</label>
                 <select name="etat" id="" class="select">
                         <option value="All">tout</option>
-                        <?php $auteurs=findAllAuteur();?>
-                        <?php foreach ($auteurs as  $auteur):?>
-                            <option value="<?=$auteur["prenom"]."  ".$auteur["nom"]?>"><?=$auteur["prenom"]."  ".$auteur["nom"]?></option>
+                        <?php $EtatExemplaires=findAllEtatExemplaire();?>
+                        <?php foreach ($EtatExemplaires as $EtatExemplaire):?>
+                            <option value="<?=$EtatExemplaire["libelle"]?>"><?=$EtatExemplaire["libelle"]?></option>
                         <?php endforeach?>
                     </select>
                 <button type="sebmit" class="sebmit">ok</button>
@@ -30,20 +31,20 @@
                 <table class="tab">
                     <thead>
                         <tr>
-                            <th>Auteur</th>
                             <th>Titre</th>
-                            <th>Date d'edition</th>
-                            <th>Exemplaires</th>
+                            <th>Auteur</th>
+                            <th>Mot cle</th>
+                            <th>Etat</th>
                         </tr>
                     </thead>
                     <tbody>
                         <?php 
-                        foreach ($tab as  $ouvrage):?>
+                        foreach ($tab as  $exemplaire):?>
                                     <tr>
-                                     <td><?=$ouvrage["prenom"]."  ".$ouvrage["nom"]?></td>
-                                     <td><?=$ouvrage["titre"]?></td>
-                                     <td><?=$ouvrage["date_edition"]?></td>
+                                     <td><?=$exemplaire["titre"]?></td>
+                                     <td><?=$exemplaire["prenom"]."  ".$exemplaire["nom"]?></td>
                                      <td><button><a href="">details</a></button></td>   
+                                     <td><button><?=$exemplaire["libelle"]?></button></td>
                                                            
                                   </tr>
                                  
@@ -52,7 +53,7 @@
                 </table>
                 <div class="pagi flex aic">
                 <?php for ($i=1; $i <= $nombre_page ; $i++):?>
-                    <a href="<?=path("ouvrage","show-ouvrage")?>&pag=<?=$i ?>" class="flex aic"><?=$i ?> </a>
+                    <a href="<?=path("exemplaire","show-exemplaire")?>&pag=<?=$i ?>" class="flex aic"><?=$i ?> </a>
                 <?php endfor?>
             </div>
     </section>

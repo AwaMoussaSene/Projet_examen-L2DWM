@@ -13,11 +13,11 @@
                 <div class="link">
                     <button class="button_on flex aic">
                         <img src="image/ajouts.png" alt="" class="image">
-                        <a href="">Liste des ouvrages</a>
+                        <a href="<?=path("ouvrage","show-ouvrage") ?>">Liste des ouvrages</a>
                     </button>
                     <button class="button_on flex aic">
                         <img src="image/ajouts.png" alt="" class="image">
-                        <a href="">Liste des exemplaires</a>
+                        <a href="<?=path("exemplaire","show-exemplaire") ?>">Liste des exemplaires</a>
                     </button>
                     <button class="button_on flex aic">
                         <img src="image/ajouts.png" alt="" class="image">
