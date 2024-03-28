@@ -54,8 +54,11 @@ section{
                 border-left: none;
                 border-top: none;
                 border-right: none;
-                &:hover{ background-color: #1A0A81;}
-                 a{ color: white; font-size: 18px; }
+                &:hover{ 
+                    background-color: #1A0A81;
+                    a{color: white;}
+                }
+                 a{ color: #1A0A81; font-size: 18px; }
                  .image{height: 35px;width: 15%;}
             }
         }
@@ -146,16 +149,62 @@ section{
                 padding: 2%;
                 border: solid 1px;
                 background-color: #1A0A81;
-               
+                &:hover{
+                    background-color: rgb(113, 201, 252) ;
+                    a{ color: #1A0A81;} 
+                } 
             }
-            :hover{
-                color: white ;
-                background-color: rgb(113, 201, 252) ;
-            
-            } 
+     
            
         }
 
     
       }
+}
+
+.login{
+     width: 25%;
+     height: 45vh;
+     background-color: rgb(113, 201, 252);
+     margin: auto;
+     margin-top: 25vh;
+     box-shadow: 1px  1px  25px gray; 
+     .log{
+        width: 80%;
+        height: 30vh;
+        h1{color: #1A0A81; margin-left: 40%;}
+        .form-login{
+            width: 100%;
+            height: 25vh;
+            margin-top: 3vh;
+            .inpute{
+                width: 100%;
+                height: 9vh;
+                .input-login{
+                    width: 100%;
+                    height: 4vh;
+                    background-color: #1A0A81;
+                    border: none;
+                    border-radius: 25px;
+                    color: white;
+                }
+                label{color: #1A0A81;}
+            }
+           .button-login{
+                    width: 40%;
+                    height: 5vh;
+                    background-color: #1A0A81;
+                    border: none;
+                    border-radius: 25px;
+                    margin-left: 30%;
+                    margin-top: 1vh;
+                    color: white;
+                    cursor: pointer;
+           }
+         }
+
+
+     }
+     
+
 }

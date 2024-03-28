@@ -3,11 +3,11 @@
                 <div class="entete">
                     <div class="box-profil flex jc-sa aic">
                         <div class="cercle"><img src="image/profil.png" alt=""></div>
-                        <h4>Awa Moussa Sene</h4>
+                        <h4>User: <?=$_SESSION["connect"]["prenom"]."  ".$_SESSION["connect"]["nom"]?></h4>
                     </div>
                     <div class="box-role flex jc-sa aic">
                         <img src="image/role.png" alt="">
-                        <h5>ROLE_RB</h5>
+                        <h5>ROLE: <?=$_SESSION["connect"]["libelle"]?></h5>
                     </div>
                 </div>
                 <div class="link">

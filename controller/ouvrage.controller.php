@@ -1,9 +1,5 @@
 <?php
   
-
-
-//   $ouvrages=findAllOuvrage();
-//   loadView("showOuvrage.html.php", ["ouvrages"=>$ouvrages],);
      if(isset($_REQUEST["action"])){
           if($_REQUEST["action"]=="show-ouvrage")
           { 

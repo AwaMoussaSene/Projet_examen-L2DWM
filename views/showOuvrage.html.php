@@ -15,7 +15,7 @@
                 <h2>Liste des ouvrages</h2>
             <hr>
             
-            <button class="button"><a href="../pages/ajout_ouvrage.html">Ajouter un ouvrage</a></button>
+            <button class="button"><a href="">Ajouter un ouvrage</a></button>
             <form action="" class="form">
                 <label for="">Auteur:</label>
                 <select name="etat" id="" class="select">
