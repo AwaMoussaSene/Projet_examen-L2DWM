@@ -200,7 +200,7 @@ section .body .form .sebmit {
 section .body .tab {
   border-collapse: collapse;
   height: 30vh;
-  min-width: 1000px;
+  min-width: 1100px;
   margin: 50px auto;
   margin-top: 3vh;
   border: 2px solid #1A0A81;

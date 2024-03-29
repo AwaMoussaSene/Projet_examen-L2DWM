@@ -24,7 +24,7 @@
                redirecToRoote("pret","show-pret");
                }
                elseif($connect["libelle"]=="Adherent"){
-                  redirecToRoote("ouvrage","show-ouvrage");
+                  redirecToRoote("user","show-user");
                   }
          }
          else{

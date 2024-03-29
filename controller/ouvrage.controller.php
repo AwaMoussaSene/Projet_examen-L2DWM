@@ -8,9 +8,6 @@
       }
           
      }
-     else{
-        $ouvrages=findAllOuvrage();
-        loadView("showOuvrage.html.php", ["ouvrages"=>$ouvrages],);
-     }
+    
 
 ?>

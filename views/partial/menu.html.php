@@ -39,8 +39,15 @@
                         <a href="<?=path("dmdpret","val-pret") ?>">Valider demandes</a>
                     </button> 
                 <?php endif?> 
+                <?php  if ($_SESSION["connect"]["libelle"]=="Adherent"):?>
+                    <button class="button_on flex aic">
+                        <img src="image/ajouts.png" alt="" class="image">
+                        <a href="<?=path("user","show-user") ?>">Mes demandes</a>
+                    </button> 
+
+                <?php endif?> 
                 </div>
-                <button class="button_one flex aic">
+                    <button class="button_one flex aic">
                         <img src="image/deconnexion.png" alt="" class="image">
                         <a href="<?=WEBROOT?>">Deconnexion</a>
                     </button>

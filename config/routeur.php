@@ -19,7 +19,7 @@
         elseif($_REQUEST['controller']=="dmdpret"){
             require_once(ROOT."/controller/dmdpret.controller.php");
         }elseif($_REQUEST['controller']=="user"){
-            require_once(ROOT."/controller/user.controller.php");
+            require_once(ROOT."/controller/users.controller.php");
         }
 
 

@@ -8,9 +8,6 @@
       }
           
      }
-     else{
-        $auteurs=findAllAuteur();
-        loadView("showAuteur.html.php", ["auteurs"=>$auteurs],);
-     }
+    
 
 ?>
