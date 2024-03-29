@@ -7,5 +7,6 @@
             require_once(ROOT."/modele/login.modele.php");
             require_once(ROOT."/modele/exemplaire.modele.php");
             require_once(ROOT."/modele/rayon.modele.php");
+            require_once(ROOT."/modele/pret.modele.php");
        
 ?>

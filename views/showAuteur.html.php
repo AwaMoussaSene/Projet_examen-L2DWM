@@ -20,7 +20,6 @@
                 <label for="">Profession:</label>
                 <select name="etat" id="" class="select">
                         <option value="All">tout</option>
-                        <?php $auteurs=findAllAuteur();?>
                         <?php foreach ($auteurs as  $auteur):?>
                             <option value="<?=$auteur["profession"]?>"><?=$auteur["profession"]?></option>
                         <?php endforeach?>

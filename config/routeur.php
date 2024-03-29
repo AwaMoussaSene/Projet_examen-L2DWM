@@ -13,6 +13,10 @@
         }elseif($_REQUEST['controller']=="rayon"){
             require_once(ROOT."/controller/rayon.controller.php");
         }
+        elseif($_REQUEST['controller']=="pret"){
+            require_once(ROOT."/controller/pret.controller.php");
+        }
+
 
 
     }else{

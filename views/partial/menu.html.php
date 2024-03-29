@@ -11,6 +11,7 @@
                     </div>
                 </div>
                 <div class="link">
+                <?php if ($_SESSION["connect"]["libelle"] == "RB"):?>
                     <button class="button_on flex aic">
                         <img src="image/ajouts.png" alt="" class="image">
                         <a href="<?=path("ouvrage","show-ouvrage") ?>">Liste des ouvrages</a>
@@ -27,11 +28,21 @@
                         <img src="image/ajouts.png" alt="" class="image">
                         <a href="<?=path("rayon","show-rayon") ?>">Liste des rayons</a>
                     </button>
-                   
+                <?php endif?> 
+                <?php  if ($_SESSION["connect"]["libelle"]=="RP"):?>
+                    <button class="button_on flex aic">
+                        <img src="image/ajouts.png" alt="" class="image">
+                        <a href="<?=path("ouvrage","show-ouvrage") ?>">Liste des pret</a>
+                    </button> 
+                    <button class="button_on flex aic">
+                        <img src="image/ajouts.png" alt="" class="image">
+                        <a href="<?=path("ouvrage","show-ouvrage") ?>">Valider demandes</a>
+                    </button> 
+                <?php endif?> 
                 </div>
                 <button class="button_one flex aic">
                         <img src="image/deconnexion.png" alt="" class="image">
-                        <a href="">Deconnexion</a>
+                        <a href="<?=WEBROOT?>">Deconnexion</a>
                     </button>
                 
          </div>
