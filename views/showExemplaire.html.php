@@ -56,5 +56,6 @@
                     <a href="<?=path("exemplaire","show-exemplaire")?>&pag=<?=$i ?>" class="flex aic"><?=$i ?> </a>
                 <?php endfor?>
             </div>
+            <div></div>
     </section>
            
