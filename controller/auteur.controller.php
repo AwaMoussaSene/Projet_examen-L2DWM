@@ -4,13 +4,13 @@
           if($_REQUEST["action"]=="show-auteur")
           { 
                $auteurs=findAllAuteur();
-            //    loadView("showOuvrage.html.php", ["ouvrages"=>$ouvrages],);
+               loadView("showAuteur.html.php", ["auteurs"=>$auteurs],);
       }
           
      }
      else{
         $auteurs=findAllAuteur();
-        // loadView("showOuvrage.html.php", ["ouvrages"=>$ouvrages],);
+        loadView("showAuteur.html.php", ["auteurs"=>$auteurs],);
      }
 
 ?>

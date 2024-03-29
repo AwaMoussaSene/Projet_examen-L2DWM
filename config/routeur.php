@@ -10,6 +10,8 @@
         }
         elseif($_REQUEST['controller']=="auteur"){
             require_once(ROOT."/controller/auteur.controller.php");
+        }elseif($_REQUEST['controller']=="rayon"){
+            require_once(ROOT."/controller/rayon.controller.php");
         }
 
 

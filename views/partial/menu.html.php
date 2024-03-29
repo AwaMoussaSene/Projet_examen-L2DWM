@@ -21,11 +21,11 @@
                     </button>
                     <button class="button_on flex aic">
                         <img src="image/ajouts.png" alt="" class="image">
-                        <a href="">Liste des auteurs</a>
+                        <a href="<?=path("auteur","show-auteur") ?>">Liste des auteurs</a>
                     </button>
                     <button class="button_on flex aic">
                         <img src="image/ajouts.png" alt="" class="image">
-                        <a href="">Liste des rayons</a>
+                        <a href="<?=path("rayon","show-rayon") ?>">Liste des rayons</a>
                     </button>
                    
                 </div>

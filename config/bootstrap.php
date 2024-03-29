@@ -6,8 +6,6 @@
             require_once(ROOT."/modele/ouvrage.modele.php");
             require_once(ROOT."/modele/login.modele.php");
             require_once(ROOT."/modele/exemplaire.modele.php");
-
-           
-
+            require_once(ROOT."/modele/rayon.modele.php");
        
 ?>
