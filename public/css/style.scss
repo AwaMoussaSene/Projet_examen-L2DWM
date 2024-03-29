@@ -137,6 +137,21 @@ section{
             td a{ color: black;}
         
             tbody,tr, td, th{border: 1px solid gray;}
+            .rej{
+                width: 30%;
+                height: 4vh;
+                background-color: red;
+                margin-left: 5%;
+                border: none;
+                a{color: white;font-size: 14px; }
+            }
+            .val{
+                width: 30%;
+                height: 4vh;
+                border: none;
+                background-color: green;
+                a{color: white;font-size: 14px; }
+            }
         }
         .pagi{
             height: 7vh;

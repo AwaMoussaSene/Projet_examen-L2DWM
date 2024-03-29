@@ -222,6 +222,27 @@ section .body .tab td a {
 section .body .tab tbody, section .body .tab tr, section .body .tab td, section .body .tab th {
   border: 1px solid gray;
 }
+section .body .tab .rej {
+  width: 30%;
+  height: 4vh;
+  background-color: red;
+  margin-left: 5%;
+  border: none;
+}
+section .body .tab .rej a {
+  color: white;
+  font-size: 14px;
+}
+section .body .tab .val {
+  width: 30%;
+  height: 4vh;
+  border: none;
+  background-color: green;
+}
+section .body .tab .val a {
+  color: white;
+  font-size: 14px;
+}
 section .body .pagi {
   height: 7vh;
   margin-top: 2vh;

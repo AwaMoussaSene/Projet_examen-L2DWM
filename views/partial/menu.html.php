@@ -32,11 +32,11 @@
                 <?php  if ($_SESSION["connect"]["libelle"]=="RP"):?>
                     <button class="button_on flex aic">
                         <img src="image/ajouts.png" alt="" class="image">
-                        <a href="<?=path("ouvrage","show-ouvrage") ?>">Liste des pret</a>
+                        <a href="<?=path("pret","show-pret") ?>">Liste des pret</a>
                     </button> 
                     <button class="button_on flex aic">
                         <img src="image/ajouts.png" alt="" class="image">
-                        <a href="<?=path("ouvrage","show-ouvrage") ?>">Valider demandes</a>
+                        <a href="<?=path("dmdpret","val-pret") ?>">Valider demandes</a>
                     </button> 
                 <?php endif?> 
                 </div>

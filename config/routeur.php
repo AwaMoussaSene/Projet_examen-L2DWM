@@ -16,6 +16,12 @@
         elseif($_REQUEST['controller']=="pret"){
             require_once(ROOT."/controller/pret.controller.php");
         }
+        elseif($_REQUEST['controller']=="dmdpret"){
+            require_once(ROOT."/controller/dmdpret.controller.php");
+        }elseif($_REQUEST['controller']=="user"){
+            require_once(ROOT."/controller/user.controller.php");
+        }
+
 
 
 

@@ -6,7 +6,7 @@
                $etatprets=findAllEtatPret();
                $prets=findAllPret();
                loadView("showPret.html.php", ["prets"=>$prets,"etatprets"=>$etatprets]);
-      }
+        } 
           
      }
      

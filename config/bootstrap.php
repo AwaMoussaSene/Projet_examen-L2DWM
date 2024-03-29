@@ -8,5 +8,8 @@
             require_once(ROOT."/modele/exemplaire.modele.php");
             require_once(ROOT."/modele/rayon.modele.php");
             require_once(ROOT."/modele/pret.modele.php");
+            require_once(ROOT."/modele/dmdpret.modele.php");
+            require_once(ROOT."/modele/user.modele.php");
+
        
 ?>
