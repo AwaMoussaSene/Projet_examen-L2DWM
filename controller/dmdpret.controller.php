@@ -7,6 +7,10 @@
              $dmdprets=findAllDmdPret();
              loadView("valPret.html.php", ["dmdprets"=>$dmdprets]);
       }
+      if($_REQUEST["action"]=="form-dmd")
+      { 
+           loadView("addDmd.html.php");
+    }
           
      }
      

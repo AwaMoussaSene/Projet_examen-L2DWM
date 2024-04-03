@@ -157,3 +157,44 @@ INSERT INTO `motexemplaire` (`id_mot`, `idexemplaire`) VALUES
 ('8', '8'), 
 ('5', '3'), 
 ('1', '5');
+
+
+
+
+INSERT INTO departement (iddep, nomdep, descriptions, datecreation) VALUES
+(1, 'Ressources Humaines', "Gère les ressources humaines de l'entreprise", '2023-05-15'),
+(2, 'Informatique', 'S occupe du développement et de la maintenance des systèmes informatiques', '2022-02-20'),
+(2, 'Markting', "S occupe du markting et de la communication  de l'entreprise", '2022-05-2');
+
+
+
+INSERT INTO employer (idemployer, nom, prenom, datenss, email, tel, etat, iddep) VALUES
+("", 'badara', 'ba', '1999-05-12', 'ba@gmail.com', '012243456789', 'Actif', 1),
+("", 'awa', 'sene', '2004-07-20', 'sene@gmail.com', '098765124321', 'archiver', 3),
+("", 'badara', 'diallo', '1999-05-12', 'diallo@gmail.com', '011123456789', 'Actif', 1),
+("", 'issa', 'diop', '1899-05-12', 'diop@gmail.com', '012345336789', 'Actif',3),
+("", 'madjeme', 'diop', '1999-05-12', 'diopba@gmail.com', '0124253456789', 'archiver', 2),
+("", 'badara', 'ba', '1999-05-12', 'ba@gmail.com', '338663535', 'Actif', 1),
+("", 'jami', 'ba', '2002-05-12', 'jamiba@gmail.com', '5678237838','archiver', 2),
+("", 'amadou', 'diatta', '1999-05-1', 'diatta@gmail.com', '57738', 'Actif', 3);
+
+
+
+INSERT INTO contrat (idcontrat, types) VALUES
+("", 'contrat de développement logiciel'),
+("", 'contrat de service');
+("", 'contrat de""consultation');
+
+
+INSERT INTO client (idclient, nom, prenom, adresse, email, tel, idcontrat) VALUES
+("", 'sene', 'awa', 'medina', 'jamiaba@gmail.com', '34567890', 1),
+("", 'sene', 'moussa', 'face', 'diatta@gmail.com', '987653210', 2),
+("", 'diop', 'moussa', 'mermoz', 'diop@gmail.com', '98765410', 2),
+("", 'diop', 'fatou', 'face', 'fatou@gmail.com', '987543210', 3),
+("", 'sane', 'fatou', 'mbour', 'sane@gmail.com', '97543210', 3);
+
+
+INSERT INTO projets (idprojet, nom, descriptions, datedebut, datefin, etat, idclient, iddep) VALUES
+("", 'Projet A', 'Développement d une nouvelle application web', '2023-03-01', '2023-08-31', 'En cours', 1, 4),
+("", 'Projet B', 'Migration vers un nouveau système de gestion', '2023-05-15', '2023-12-31', 'En attente', 2, 3),
+("", 'Projet C', 'Développement d une nouvelle site web', '2023-05-15', '2023-12-31', 'En attente', 2, 5);

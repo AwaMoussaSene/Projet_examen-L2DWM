@@ -44,6 +44,10 @@
                         <img src="image/ajouts.png" alt="" class="image">
                         <a href="<?=path("user","show-user") ?>">Mes demandes</a>
                     </button> 
+                    <button class="button_on flex aic">
+                        <img src="image/ajouts.png" alt="" class="image">
+                        <a href="<?=path("ouvrage","all-ouvrage") ?>">Catalogues</a>
+                    </button> 
 
                 <?php endif?> 
                 </div>
