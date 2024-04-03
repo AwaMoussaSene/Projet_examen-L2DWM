@@ -9,6 +9,9 @@
           if($_REQUEST["action"]=="all-ouvrage")
           { 
                loadView("catalogue.html.php", [],"catalogue");
+          }  if($_REQUEST["action"]=="form-ouvrage")
+          { 
+               loadView("addOuvrage.html.php");
           }
           
      }
