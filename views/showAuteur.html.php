@@ -15,7 +15,7 @@
                 <h2>Liste des auteurs</h2>
             <hr>
             
-            <button class="button"><a href="">Ajouter un auteur</a></button>
+            <button class="button"><a href="<?=path("auteur","form-auteur") ?>">Ajouter un auteur</a></button>
             <form action="" class="form">
                 <label for="">Profession:</label>
                 <select name="etat" id="" class="select">

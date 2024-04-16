@@ -4,14 +4,12 @@
           if($_REQUEST["action"]=="show-exemplaire")
           { 
                $exemplaires=findAllExemplaire();
-
                loadView("showExemplaire.html.php", ["exemplaire"=>$exemplaires],);
-      }
+          } if($_REQUEST["action"]=="form-exemplaire")
+          { 
+               loadView("addExemplaire.html.php");
+          }
           
      }
-     else{
-        $exemplaires=findAllExemplaire();
-        loadView("showExemplaire.html.php", ["exemplaire"=>$exemplaires],);
-     }
-
+    
 ?>

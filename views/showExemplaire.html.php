@@ -16,7 +16,7 @@
                 <h2>Liste des exemplaires</h2>
             <hr>
             
-            <button class="button"><a href="">Ajouter un exemplaire</a></button>
+            <button class="button"><a href="<?=path("exemplaire","form-exemplaire") ?>">Ajouter un exemplaire</a></button>
             <form action="" class="form">
                 <label for="">Etat:</label>
                 <select name="etat" id="" class="select">

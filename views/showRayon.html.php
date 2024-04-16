@@ -2,12 +2,15 @@
 
 ?>
 <div class="body">
-                <h2>Liste des exemplaires</h2>
+                <h2>Nouveau rayon</h2>
             <hr>
             
-            <button class="button"><a href="">Ajouter un rayon</a></button>
-            <form action="" class="form">
-             
+            <form action="" class="form-rayon">
+                <label for="">Ajouter rayon</label><br>
+                <div class="label flex jc-sa ">
+                    <input type="text" placeholder="" class="inpute">
+                    <button type="submit" class="sebmit">Ajouter</button>
+                </div>
             </form>
                 <table class="tab">
                     <thead>

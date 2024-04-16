@@ -1,6 +1,6 @@
 <?php
         function findAllAuteur(){
-            $sql="SELECT nom, prenom, profession from auteur" ;
+            $sql="SELECT id_auteur, nom, prenom, profession from auteur" ;
             return executeSelect($sql);
         
         }

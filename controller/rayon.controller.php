@@ -5,12 +5,8 @@
           { 
                $rayons=findAllRayon();
                loadView("showRayon.html.php", ["rayons"=>$rayons],);
-      }
+          }
           
-     }
-     else{
-        $auteurs=findAllAuteur();
-        loadView("showRayon.html.php", ["rayons"=>$rayons],);
      }
 
 ?>

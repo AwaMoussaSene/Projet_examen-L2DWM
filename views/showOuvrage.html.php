@@ -16,16 +16,16 @@
             <hr>
             
             <button class="button"><a href="<?=path("ouvrage","form-ouvrage") ?>">Ajouter un ouvrage</a></button>
-            <form action="" class="form">
+            <form action="<?=WEBROOT?>" class="form" method="post">
                 <label for="">Auteur:</label>
-                <select name="etat" id="" class="select">
+                <select name="auteur" id="" class="select">
                         <option value="All">tout</option>
-                        <?php $auteurs=findAllAuteur();?>
                         <?php foreach ($auteurs as  $auteur):?>
-                            <option value="<?=$auteur["prenom"]."  ".$auteur["nom"]?>"><?=$auteur["prenom"]."  ".$auteur["nom"]?></option>
+                            <option value="<?=$auteur["id_auteur"]?>"><?=$auteur["prenom"]?></option>
                         <?php endforeach?>
                     </select>
-                <button type="sebmit" class="sebmit">ok</button>
+                    <input type="hidden" name="controller" value="ouvrage">
+                <button type="submit" name="action" value="show-ouvrage" class="sebmit">ok</button>
             </form>
                 <table class="tab">
                     <thead>
@@ -40,7 +40,7 @@
                         <?php 
                         foreach ($tab as  $ouvrage):?>
                                     <tr>
-                                     <td><?=$ouvrage["prenom"]."  ".$ouvrage["nom"]?></td>
+                                     <td><?=$ouvrage["prenom"]?></td>
                                      <td><?=$ouvrage["titre"]?></td>
                                      <td><?=$ouvrage["date_edition"]?></td>
                                      <td><button><a href="">details</a></button></td>   

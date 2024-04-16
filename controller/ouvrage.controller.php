@@ -3,8 +3,10 @@
      if(isset($_REQUEST["action"])){
           if($_REQUEST["action"]=="show-ouvrage")
           { 
-               $ouvrages=findAllOuvrage();
-               loadView("showOuvrage.html.php", ["ouvrages"=>$ouvrages],);
+               $auteur=isset($_REQUEST["auteur"])?$_REQUEST["auteur"]:"All";
+               $ouvrages=findAllOuvrage($auteur);
+               $auteurs=findAllAuteur();
+               loadView("showOuvrage.html.php", ["ouvrages"=>$ouvrages,"auteurs"=>$auteurs],);
           }
           if($_REQUEST["action"]=="all-ouvrage")
           { 
