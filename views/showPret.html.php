@@ -13,9 +13,7 @@
 ?>
 <div class="body">
                 <h2>Liste des prets</h2>
-            <hr>
-            
-            <button class="button"><a href="">Ajouter un pret</a></button>
+            <button class="button"><a href="<?=path("pret","form-pret") ?>">Ajouter un pret</a></button>
             <form action="" class="form">
                 <label for="">Etat:</label>
                 <select name="etat" id="" class="select">

@@ -1,6 +1,5 @@
 <div class="body">
                 <h2>Nouveau exemplaire</h2>
-            <hr>
             <form action="" class="form-ov">
                 <label for="">Reference ouvrage</label><br>
                 <div class="label flex jc-sa ">

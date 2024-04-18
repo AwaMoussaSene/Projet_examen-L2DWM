@@ -20,6 +20,8 @@
             require_once(ROOT."/controller/dmdpret.controller.php");
         }elseif($_REQUEST['controller']=="user"){
             require_once(ROOT."/controller/users.controller.php");
+        }elseif($_REQUEST['controller']=="mot"){
+            require_once(ROOT."/controller/motCle.controller.php");
         }
 
 

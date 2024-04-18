@@ -12,9 +12,7 @@
     $tab=array_slice($auteurs, $position, $nombre_ligne);
 ?>
             <div class="body">
-                <h2>Liste des auteurs</h2>
-            <hr>
-            
+                <h2>Liste des auteurs</h2>            
             <button class="button"><a href="<?=path("auteur","form-auteur") ?>">Ajouter un auteur</a></button>
             <form action="" class="form">
                 <label for="">Profession:</label>

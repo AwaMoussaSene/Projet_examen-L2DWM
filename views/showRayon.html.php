@@ -1,10 +1,5 @@
-<?php 
-
-?>
-<div class="body">
-                <h2>Nouveau rayon</h2>
-            <hr>
-            
+<div class="body">     
+<h2>Nouveau rayon</h2>
             <form action="" class="form-rayon">
                 <label for="">Ajouter rayon</label><br>
                 <div class="label flex jc-sa ">
@@ -35,3 +30,4 @@
                 
     </section>
            
+</div>

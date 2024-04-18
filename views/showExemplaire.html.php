@@ -1,5 +1,6 @@
 <?php 
-    $exemplaires=findAllExemplaire();
+    $etat=isset($_REQUEST["etat"])?$_REQUEST["etat"]:"All";
+    $exemplaires=findAllExemplaire($etat);
     if(!isset($_GET["pag"])) {
         $pag=1;
       
@@ -14,19 +15,17 @@
 ?>
             <div class="body">
                 <h2>Liste des exemplaires</h2>
-            <hr>
-            
             <button class="button"><a href="<?=path("exemplaire","form-exemplaire") ?>">Ajouter un exemplaire</a></button>
-            <form action="" class="form">
+            <form action="<?=WEBROOT?>" class="form" method="get">
                 <label for="">Etat:</label>
                 <select name="etat" id="" class="select">
                         <option value="All">tout</option>
-                        <?php $EtatExemplaires=findAllEtatExemplaire();?>
                         <?php foreach ($EtatExemplaires as $EtatExemplaire):?>
                             <option value="<?=$EtatExemplaire["libelle"]?>"><?=$EtatExemplaire["libelle"]?></option>
                         <?php endforeach?>
                     </select>
-                <button type="sebmit" class="sebmit">ok</button>
+                    <input type="hidden" name="controller" value="exemplaire">
+                    <button type="submit" name="action" value="show-exemplaire" class="sebmit">ok</button>
             </form>
                 <table class="tab">
                     <thead>
@@ -43,7 +42,7 @@
                                     <tr>
                                      <td><?=$exemplaire["titre"]?></td>
                                      <td><?=$exemplaire["prenom"]."  ".$exemplaire["nom"]?></td>
-                                     <td><button><a href="">details</a></button></td>   
+                                     <td><button><a href="<?=WEBROOT?>/?controller=mot&action=show-exemplaire-mot&idmotcle=<?=$exemplaire["id_mot"]?>">details</a></button></td>   
                                      <td><button><?=$exemplaire["libelle"]?></button></td>
                                                            
                                   </tr>

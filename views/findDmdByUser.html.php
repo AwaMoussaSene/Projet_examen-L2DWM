@@ -1,7 +1,6 @@
 
             <div class="body">
                 <h2>Liste des demandes</h2>
-            <hr>
             
             <button class="button"><a href="<?=path("dmdpret","form-dmd") ?>">Nouveau</a></button>
             <form action="" class="form">

@@ -12,9 +12,7 @@
     $tab=array_slice($dmdprets, $position, $nombre_ligne);
 ?>
 <div class="body">
-                <h2>Validation des demandes</h2>
-            <hr>
-            
+                <h2>Validation des demandes</h2>            
             <button></button>
             <form action="" class="form">
                

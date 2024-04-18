@@ -72,192 +72,468 @@ section{
              .image{height: 35px;width: 15%;}
         }
     }
-    .body{
-        width: 75%;
-        height: 90vh;
-        background-color: white;
-        box-shadow: 1px  1px 15px black;
-        margin-top: 6vh;
+
+
         h2{
-            font-size: 18px;
+            font-size: 28px;
             font-weight: bolder;
-            margin-top: 2%;
-            margin-left: 3%;
+            color: #1A0A81;
+            margin-top: 1vh;
+
         }
-        hr{
-            height: 1vh;
-            background-color: #1A0A81;
-            width: 4%;
-            margin-left: 3%;
-        }
-        .button{
-            width: 15%;
-            height: 6vh;
-            box-shadow: 2px 2px 2px #1A0A81;
-            background-color: white;
-            margin-left: 65%;
-            margin-top: 4vh;
-            // border-radius: 25px;
-            a{color: #1A0A81;font-size: 14px; }
-        }
-        .form{
-            width: 23%;
-            height: 8vh;
-            margin-left: 15%;
-            margin-top: 4vh;
-            .select{
-                width: 50%;
-                height: 4vh;
+     .body{
+                    width: 78%;
+                    height: 85vh;
+                    background-color: white;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    box-shadow: 1px  1px 15px black;
+                    margin-top: 7vh;
+
+                    .button{
+                        width: 15%;
+                        height: 6vh;
+                        box-shadow: 2px 2px 2px #1A0A81;
+                        background-color: white;
+                        margin-left: 80%;
+                        margin-top: 4vh;
+                        // border-radius: 25px;
+                        a{color: #1A0A81;font-size: 14px; }
+                    }
+                    .form{
+                        width: 50%;
+                        height: 8vh;
+                        margin-left: 5%;
+                        margin-top: 4vh;
+                        .select{
+                            width: 70%;
+                            height: 4vh;
+                            // border-radius: 25px;
+                            background-color: rgb(235, 234, 234);
+                        }
+                        .sebmit{
+                            width: 10%;
+                            height: 4vh;
+                            margin-left: 1%;
+                            background-color: #1A0A81;
+                            color: white;
+                            border: 2px;
+                        }
+                    }
+                    .tab{
+                        border-collapse: collapse;
+                        height: 30vh;
+                    min-width: 1130px;
+                    margin: 50px auto;
+                    margin-top: 3vh;
+                    border: 2px solid #1A0A81;
+                    cursor: pointer;
+                    box-shadow: 2px 2px 2px #1A0A81;
+                    thead tr{
+                        background-color: #1A0A81;
+                        text-align: left;
+                        height: 8vh;
+                        color: white;  
+                        }
+                        th, td{ padding: 15px 20px;}
+                        td a{ color: black;}
+                    
+                        tbody,tr, td, th{border: 1px solid gray;}
+                        .rej{
+                            width: 30%;
+                            height: 4vh;
+                            background-color: red;
+                            margin-left: 5%;
+                            border: none;
+                            a{color: white;font-size: 14px; }
+                        }
+                        .val{
+                            width: 30%;
+                            height: 4vh;
+                            border: none;
+                            background-color: green;
+                            a{color: white;font-size: 14px; }
+                        }
+                    }
+                    .pagi{
+                        height: 7vh;
+                        margin-top: 2vh;
+                        margin-left: 38%;
+                        a{
+                            height: 7vh;
+                            color: white;
+                            font-size: 20px;
+                            padding: 2%;
+                            border: solid 1px;
+                            background-color: #1A0A81;
+                            &:hover{
+                                background-color: rgb(113, 201, 252) ;
+                                a{ color: #1A0A81;} 
+                            } 
+                        }
+                
+                    
+                    }
+
+                
+            .form-ouvrage{
+                width: 80%;
+                height: 60vh;
+                margin: auto;
+                margin-top: 5vh;
+                border: solid 1px #1A0A81;
                 border-radius: 25px;
-            }
-            .sebmit{
-                width: 18%;
-                height: 3vh;
-                margin-left: 1%;
-                background-color: #1A0A81;
-                color: white;
-                border: 2px;
-            }
-        }
-        .tab{
-            border-collapse: collapse;
-            height: 30vh;
-           min-width: 1100px;
-           margin: 50px auto;
-           margin-top: 3vh;
-           border: 2px solid #1A0A81;
-           cursor: pointer;
-           box-shadow: 2px 2px 2px #1A0A81;
-           thead tr{
-            background-color: #1A0A81;
-             text-align: left;
-             height: 8vh;
-             color: white;  
-            }
-            th, td{ padding: 15px 20px;}
-            td a{ color: black;}
-        
-            tbody,tr, td, th{border: 1px solid gray;}
-            .rej{
-                width: 30%;
-                height: 4vh;
-                background-color: red;
-                margin-left: 5%;
-                border: none;
-                a{color: white;font-size: 14px; }
-            }
-            .val{
-                width: 30%;
-                height: 4vh;
-                border: none;
-                background-color: green;
-                a{color: white;font-size: 14px; }
-            }
-        }
-        .pagi{
-            height: 7vh;
-            margin-top: 2vh;
-            margin-left: 38%;
-            a{
-                height: 7vh;
-                color: white;
-                font-size: 20px;
-                padding: 2%;
-                border: solid 1px;
-                background-color: #1A0A81;
-                &:hover{
-                    background-color: rgb(113, 201, 252) ;
-                    a{ color: #1A0A81;} 
-                } 
-            }
-     
-           
-        }
-
-    
-      }
-}
-
-.login{
-     width: 25%;
-     height: 45vh;
-     background-color: rgb(113, 201, 252);
-     margin: auto;
-     margin-top: 25vh;
-     box-shadow: 1px  1px  25px gray; 
-     .log{
-        width: 80%;
-        height: 30vh;
-        h1{color: #1A0A81; margin-left: 40%;}
-        .form-login{
-            width: 100%;
-            height: 25vh;
-            margin-top: 3vh;
-            .inpute{
-                width: 100%;
-                height: 9vh;
-                .input-login{
+            .container{
+                width: 95%;
+                height: 50vh;
+                .label{
                     width: 100%;
-                    height: 4vh;
-                    background-color: #1A0A81;
-                    border: none;
-                    border-radius: 25px;
-                    color: white;
+                    height: 13vh;
+                    margin: auto;
+                    margin-top: 1vh;
+                    label{font-size: 18px;}
+                    .inpute{
+                        width: 100%;
+                        height: 7vh;
+                        border: none;
+                        box-shadow: 1px  1px 15px #1A0A81;
+                    }
                 }
-                label{color: #1A0A81;}
-            }
-           .button-login{
+                .sebmit{
                     width: 40%;
                     height: 5vh;
-                    background-color: #1A0A81;
+                    background-color: green;
                     border: none;
-                    border-radius: 25px;
-                    margin-left: 30%;
-                    margin-top: 1vh;
                     color: white;
                     cursor: pointer;
-           }
-         }
+                    margin-top: 3vh;
+                }
+                .annuler{
+                    width: 40%;
+                    height: 5vh;
+                    background-color: rgb(156, 103, 6);
+                    border: none;
+                    color: white;
+                    margin-top: 3vh;
+                    cursor: pointer;
+                    margin-left: 10%;
 
+                }
+            }
+            }
 
-     }
-     
+            .form-ex{
+                width: 80%;
+                height: 40vh;
+                margin: auto;
+                margin-top: 3vh;
+                border: solid 1px #1A0A81;
+                border-radius: 25px;
+                .container{
+                    width: 95%;
+                    height: 12vh;
+                    margin: auto;
+                    margin-top: 3vh;
+                    .label{
+                        width: 48%;
+                        height: 13vh;
+                        margin: auto;
+                        margin-top: 1vh;
+                        label{font-size: 18px;}
+                        .inpute{
+                            width: 100%;
+                            height: 7vh;
+                            border: none;
+                            box-shadow: 1px  1px 15px #1A0A81;
+                        }
+                        .select{
+                            width: 100%;
+                            height: 7vh;
+                            border: none;
+                            box-shadow: 1px  1px 15px #1A0A81;
+                        }
+                    }
+                }
+                .sebmit{
+                    width: 40%;
+                    height: 5vh;
+                    background-color: green;
+                    border: none;
+                    color: white;
+                    cursor: pointer;
+                    margin-top: 3vh;
+                }
+                .annuler{
+                    width: 40%;
+                    height: 5vh;
+                    background-color: rgb(156, 103, 6);
+                    border: none;
+                    color: white;
+                    margin-top: 3vh;
+                    cursor: pointer;
+                    margin-left: 10%;
 
-}
+                }
+            }
+            .form-ov{
+            width: 80%;
+            height: 14vh;
+            margin: auto;
+            margin-top: 10vh;
+            border: solid 1px #1A0A81;
+            border-radius: 20px;
+            label{font-size: 18px;
+                margin-left: 3vh;}
+            .label{
+                width: 80%;
+                height: 13vh;
+                margin-top: 1vh;
+                .inpute{
+                    width: 100%;
+                    height: 7vh;
+                    border: none;
+                    margin-left: 3vh;
+                    box-shadow: 1px  1px 15px #1A0A81;
+                }
+                .sebmit{
+                    width: 10%;
+                    height: 6vh;
+                    background-color: green;
+                    border: none;
+                    margin-left: 3vh;
+                    font-size: 16px;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+            }
+            .form-adherent{
+                width: 80%;
+                height: 23vh;
+                margin: auto;
+                margin-top: 5vh;
+                border: solid 1px #1A0A81;
+                border-radius: 20px;
+                label{font-size: 18px;
+                    margin-left: 3vh;}
+                .label{
+                    width: 80%;
+                    height: 8vh;
+                    margin-top: 1vh;
+                    .inpute{
+                        width: 100%;
+                        height: 6vh;
+                        border: none;
+                        margin-left: 3%;
+                        box-shadow: 1px  1px 15px #1A0A81;
+                    }
+                    .sebmit{
+                        width: 10%;
+                        height: 6vh;
+                        background-color: #1A0A81;
+                        border: none;
+                        margin-left: 3vh;
+                        font-size: 16px;
+                        color: white;
+                        cursor: pointer;
+                    }
+                }
+                .container{
+                    width: 95%;
+                    height: 8vh;
+                    .label{
+                        width: 48%;
+                        height: 13vh;
+                        margin: auto;
+                        margin-top: 1vh;
+                        label{font-size: 18px;}
+                        .inpute{
+                            width: 100%;
+                            height: 6vh;
+                            border: none;
+                            box-shadow: 1px  1px 15px #1A0A81;
+                        }
 
-.form-dmd{
-    width: 60%;
-    height: 30vh;
-    margin: auto;
-    margin-top: 20vh;
-    .select-dmd{
-        width: 100%;
-        height: 7vh;
-        box-shadow: 2px  2px  2px #1A0A81; 
-    }
-    .sebmit{
-        width: 40%;
-        height: 5vh;
-        background-color: green;
-        border: none;
-        color: white;
-        cursor: pointer;
-        margin-top: 5vh;
-    }
-    .annuler{
-        width: 40%;
-        height: 5vh;
-        background-color: rgb(156, 103, 6);
-        border: none;
-        color: white;
-        margin-top: 5vh;
-        cursor: pointer;
-        margin-left: 10%;
-
-    }
+                    }
+                }
+                }
+                .form-date{
+                    width: 80%;
+                    height: 25vh;
+                    margin: auto;
+                    margin-top: 1vh;
+                    border: solid 1px #1A0A81;
+                    border-radius: 25px;
+                    .container{
+                        width: 95%;
+                        height: 12vh;
+                        margin: auto;
+                        margin-top: 3vh;
+                        .label{
+                            width: 30%;
+                            height: 10vh;
+                            margin: auto;
+                            margin-top: 1vh;
+                            label{font-size: 18px;}
+                            .inpute{
+                                width: 100%;
+                                height: 6vh;
+                                border: none;
+                                box-shadow: 1px  1px 15px #1A0A81;
+                            }
+                            .select{
+                                width: 100%;
+                                height: 6vh;
+                                border: none;
+                                box-shadow: 1px  1px 15px #1A0A81;
+                            }
+                        }
+                    }
+                    .sebmit{
+                        width: 40%;
+                        height: 5vh;
+                        background-color: green;
+                        border: none;
+                        color: white;
+                        cursor: pointer;
+                        margin-top: 3vh;
+                    }
+                    .annuler{
+                        width: 40%;
+                        height: 5vh;
+                        background-color: rgb(156, 103, 6);
+                        border: none;
+                        color: white;
+                        margin-top: 3vh;
+                        cursor: pointer;
+                        margin-left: 10%;
     
+                    }
+                }
+                .form-exemplaire{
+                    width: 80%;
+                    height: 23vh;
+                    margin: auto;
+                    margin-top: 1vh;
+                    border: solid 1px #1A0A81;
+                    border-radius: 20px;
+                    label{font-size: 18px;
+                        margin-left: 3vh;}
+                    .label{
+                        width: 80%;
+                        height: 8vh;
+                        margin-top: 1vh;
+                        .inpute{
+                            width: 100%;
+                            height: 6vh;
+                            border: none;
+                            margin-left: 3%;
+                            box-shadow: 1px  1px 15px #1A0A81;
+                        }
+                        .sebmit{
+                            width: 10%;
+                            height: 6vh;
+                            background-color: #1A0A81;
+                            border: none;
+                            margin-left: 3vh;
+                            font-size: 16px;
+                            color: white;
+                            cursor: pointer;
+                        }
+                    }
+                    .container{
+                        width: 95%;
+                        height: 8vh;
+                        .label{
+                            width: 100%;
+                            height: 13vh;
+                            margin: auto;
+                            margin-top: 1vh;
+                            label{font-size: 18px;}
+                            .inpute{
+                                width: 100%;
+                                height: 6vh;
+                                border: none;
+                                box-shadow: 1px  1px 15px #1A0A81;
+                            }
+    
+                        }
+                    }
+                    }
+            .form-rayon{
+                width: 80%;
+                height: 14vh;
+                margin-left: 2%;
+                margin-top: 10vh;
+                margin-bottom: 5vh;
+                border: solid 1px #1A0A81;
+                border-radius: 20px;
+                label{font-size: 18px;
+                margin-left: 3vh;}
+                .label{
+                width: 90%;
+                height: 13vh;
+                margin-top: 1vh;
+                .inpute{
+                    width: 100%;
+                    height: 7vh;
+                    border: none;
+                    margin-left: 3vh;
+                    box-shadow: 1px  1px 15px #1A0A81;
+                }
+                .sebmit{
+                    width: 15%;
+                    height: 6vh;
+                    background-color: #1A0A81;
+                    border: none;
+                    margin-left: 1vh;
+                    font-size: 16px;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+            }
+           
 
+            .form-dmd{
+            width: 60%;
+            height: 30vh;
+            margin: auto;
+            margin-top: 20vh;
+            .select-dmd{
+                width: 100%;
+                height: 7vh;
+                box-shadow: 2px  2px  2px #1A0A81; 
+            }
+            .sebmit{
+                width: 40%;
+                height: 5vh;
+                background-color: green;
+                border: none;
+                color: white;
+                cursor: pointer;
+                margin-top: 5vh;
+            }
+            .annuler{
+                width: 40%;
+                height: 5vh;
+                background-color: rgb(156, 103, 6);
+                border: none;
+                color: white;
+                margin-top: 5vh;
+                cursor: pointer;
+                margin-left: 10%;
+
+            }
+            
+
+            }
+     
 }
+}
+
+
 
 header{
     width: 100%;
@@ -344,167 +620,49 @@ hr{
     }
 }
 
-.form-ouvrage{
-    width: 80%;
-    height: 60vh;
+.login{
+    width: 25%;
+    height: 45vh;
+    background-color: rgb(113, 201, 252);
     margin: auto;
-    margin-top: 10vh;
-    border: solid 1px #1A0A81;
-    border-radius: 25px;
- .container{
-    width: 95%;
-    height: 50vh;
-    .label{
+    margin-top: 25vh;
+    box-shadow: 1px  1px  25px gray; 
+    .log{
+    width: 80%;
+    height: 30vh;
+    h1{color: #1A0A81; margin-left: 40%;}
+    .form-login{
         width: 100%;
-        height: 13vh;
-        margin: auto;
-        margin-top: 1vh;
-        label{font-size: 18px;}
+        height: 25vh;
+        margin-top: 3vh;
         .inpute{
             width: 100%;
-            height: 7vh;
-            border: none;
-            box-shadow: 1px  1px 15px #1A0A81;
-        }
-    }
-    .sebmit{
-        width: 40%;
-        height: 5vh;
-        background-color: green;
-        border: none;
-        color: white;
-        cursor: pointer;
-        margin-top: 3vh;
-    }
-    .annuler{
-        width: 40%;
-        height: 5vh;
-        background-color: rgb(156, 103, 6);
-        border: none;
-        color: white;
-        margin-top: 3vh;
-        cursor: pointer;
-        margin-left: 10%;
-
-    }
- }
-}
-
-.form-ex{
-    width: 80%;
-    height: 40vh;
-    margin: auto;
-    margin-top: 3vh;
-    border: solid 1px #1A0A81;
-    border-radius: 25px;
-    .container{
-        width: 95%;
-        height: 12vh;
-        margin: auto;
-        margin-top: 3vh;
-        .label{
-            width: 48%;
-            height: 13vh;
-            margin: auto;
-            margin-top: 1vh;
-            label{font-size: 18px;}
-            .inpute{
+            height: 9vh;
+            .input-login{
                 width: 100%;
-                height: 7vh;
+                height: 4vh;
+                background-color: #1A0A81;
                 border: none;
-                box-shadow: 1px  1px 15px #1A0A81;
+                border-radius: 25px;
+                color: white;
             }
-            .select{
-                width: 100%;
-                height: 7vh;
-                border: none;
-                box-shadow: 1px  1px 15px #1A0A81;
-            }
+            label{color: #1A0A81;}
         }
-    }
-    .sebmit{
-        width: 40%;
-        height: 5vh;
-        background-color: green;
-        border: none;
-        color: white;
-        cursor: pointer;
-        margin-top: 3vh;
-    }
-    .annuler{
-        width: 40%;
-        height: 5vh;
-        background-color: rgb(156, 103, 6);
-        border: none;
-        color: white;
-        margin-top: 3vh;
-        cursor: pointer;
-        margin-left: 10%;
+        .button-login{
+                width: 40%;
+                height: 5vh;
+                background-color: #1A0A81;
+                border: none;
+                border-radius: 25px;
+                margin-left: 30%;
+                margin-top: 1vh;
+                color: white;
+                cursor: pointer;
+        }
+        }
+
 
     }
+    
+
 }
-.form-ov{
-  width: 80%;
-  height: 14vh;
-  margin: auto;
-  margin-top: 10vh;
-  border: solid 1px #1A0A81;
-  border-radius: 20px;
-  label{font-size: 18px;
-    margin-left: 3vh;}
-  .label{
-    width: 80%;
-    height: 13vh;
-    margin-top: 1vh;
-    .inpute{
-        width: 100%;
-        height: 7vh;
-        border: none;
-        margin-left: 3vh;
-        box-shadow: 1px  1px 15px #1A0A81;
-    }
-    .sebmit{
-        width: 10%;
-        height: 6vh;
-        background-color: green;
-        border: none;
-        margin-left: 3vh;
-        font-size: 16px;
-        color: white;
-        cursor: pointer;
-    }
-}
-}
-.form-rayon{
-    width: 40%;
-    height: 14vh;
-    margin-left: 5%;
-    margin-top: 10vh;
-    margin-bottom: 7vh;
-    border: solid 1px #1A0A81;
-    border-radius: 20px;
-    label{font-size: 18px;
-      margin-left: 3vh;}
-    .label{
-      width: 90%;
-      height: 13vh;
-      margin-top: 1vh;
-      .inpute{
-          width: 100%;
-          height: 7vh;
-          border: none;
-          margin-left: 3vh;
-          box-shadow: 1px  1px 15px #1A0A81;
-      }
-      .sebmit{
-          width: 25%;
-          height: 6vh;
-          background-color: #1A0A81;
-          border: none;
-          margin-left: 1vh;
-          font-size: 16px;
-          color: white;
-          cursor: pointer;
-      }
-  }
-  }

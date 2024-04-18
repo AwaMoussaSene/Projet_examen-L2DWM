@@ -1,6 +1,5 @@
 <div class="body">
                 <h2>Nouveau auteur</h2>
-            <hr>
                 <form action="" class="form-ouvrage flex jc-sa aic">
                     <div class="container">
                         <div class="label">

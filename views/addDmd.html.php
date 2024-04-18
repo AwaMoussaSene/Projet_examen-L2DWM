@@ -1,6 +1,5 @@
      <div class="body">
                 <h2>Nouveau demandes</h2>
-            <hr>
            <form action="" class="form-dmd">
                 <label for="">Exemplaire:</label>
                 <select name="" id="" class="select-dmd">

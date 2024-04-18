@@ -10,6 +10,6 @@
             require_once(ROOT."/modele/pret.modele.php");
             require_once(ROOT."/modele/dmdpret.modele.php");
             require_once(ROOT."/modele/user.modele.php");
-
-       
+            require_once(ROOT."/modele/motCle.modele.php");
+    
 ?>

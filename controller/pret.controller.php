@@ -6,7 +6,10 @@
                $etatprets=findAllEtatPret();
                $prets=findAllPret();
                loadView("showPret.html.php", ["prets"=>$prets,"etatprets"=>$etatprets]);
-        } 
+        }  if($_REQUEST["action"]=="form-pret")
+        { 
+             loadView("addPret.html.php");
+        }
           
      }
      
